@@ -1,4 +1,4 @@
-const randomUserAPI = 'https://randomuser.me/api/?results=12&nat=us';
+3const randomUserAPI = 'https://randomuser.me/api/?results=12&nat=us';
 const main = document.querySelector('main');
 const modal = document.querySelector('.modal')
 const userData = [];
@@ -10,6 +10,7 @@ const arrowsDiv = document.querySelector('.arrows')
 let counter;
 let rightArrow;
 let leftArrow;
+
 // --------------------------- FUNCTIONS ---------------------------
 
     function createProfileCard(userInfo) {
@@ -36,6 +37,7 @@ let leftArrow;
     }
 
 // --------------------------- FETCH DATA FROM SERVER ---------------------------
+
 fetch(randomUserAPI)
     .then(response => response.json()) // convert response into json
     .then(json => {
@@ -57,7 +59,6 @@ fetch(randomUserAPI)
         })
     })
     .catch(err => console.error(err))
-
 
 // --------------------------- SHOW MODAL ---------------------------
 main.addEventListener('click', (e) => {
