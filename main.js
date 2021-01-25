@@ -1,4 +1,4 @@
-3const randomUserAPI = 'https://randomuser.me/api/?results=12&nat=us';
+const randomUserAPI = 'https://randomuser.me/api/?results=12&nat=us';
 const main = document.querySelector('main');
 const modal = document.querySelector('.modal')
 const userData = [];
